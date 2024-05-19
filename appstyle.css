@@ -1,0 +1,107 @@
+html {
+	height: 100%;
+	width: 200%;
+
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 3px;
+	border-radius: 10px;
+	background-color: #d7d7ef;
+	transition-duration: 0.4s;
+}
+
+button {
+	border: none;
+	border-radius: 7px;
+	padding: 15px 10px;
+	text-align: center;
+	font-size: 11px;
+	transition-duration: 0.4s;
+	display: inline-block;
+}
+
+button:hover {
+	color: white;
+	box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+tr:hover td {
+	text-decoration-line: line-through;
+}
+
+#import-functions {
+	margin-top: 5px;
+}
+
+#reg-buttons {
+	margin-top: 5px;
+}
+
+#add {
+	border: 2px solid #0c7203;
+	background-color: white;
+	color: #0d9e00;
+}
+
+#add:hover {
+	background-color: #0d9e00;
+	color: white;
+}
+
+#rmv-all {
+	border: 2px solid #a40404;
+	background-color: white;
+	color: #DD1414;
+
+}
+
+#rmv-all:hover {
+	background-color: #DD1414;
+	color: white;
+}
+
+#export {
+	border: 2px solid #043f97;
+	background-color: white;
+	color: #1f68d5;
+}
+
+#export:hover {
+	background-color: #1f68d5;
+	color:white;
+}
+
+input[type=file]::file-selector-button {
+	border: 2px solid #71028F;
+	background-color: white;
+	color: #9117B2;
+	border-radius: 7px;
+	padding: 15px 10px;
+	text-align: center;
+	font-size: 11px;
+	transition-duration: 0.4s;
+	display: inline-block;
+}
+
+input[type=file]::file-selector-button:hover {
+	background-color: #9117b2;
+	color: white;
+	box-shadow: 0 6px 11px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#submit {
+	border: 2px solid #e65800;
+	color: #ff7b29;
+	background-color: white;
+}
+
+#submit:hover {
+	color: white;
+	background-color: #ff7b29;
+}
