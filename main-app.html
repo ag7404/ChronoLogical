@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>ChronoLogical</title>
+		
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	
+	<body>
+		<div id="container">
+			<table id="schedule">
+
+				<thead>
+
+					<tr class="setup">
+						<th>Time</th>
+						<th>Event</th>
+					</tr>
+
+					<tr class="setup">
+
+						<th>
+							<label>Time:</label>
+							<input type="time" id="time" size="10">
+
+						</th>
+
+						<th>
+							<label>Event details:</label>
+							<input type="text" id="details" placeholder="ex: Take out the trash">
+						</th>
+
+					</tr>
+
+				</thead>
+
+
+			</table>
+		</div>
+	    
+
+		<div id="reg-buttons">
+
+			<button id="add">Add</button>
+			<button id="rmv-all">Clear</button>
+			<button id="export">Export</button>
+			
+		</div>
+
+		<div id="import-functions">
+			<button id="submit">Submit chosen file</button>
+			<input id="import" type="file" accept=".txt">
+			
+		</div>
+		
+		<script src="script.js"></script>
+	</body>
+
+</html>
