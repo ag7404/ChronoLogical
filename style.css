@@ -2,7 +2,9 @@ html {
   height: 100%;
   width: 100%;
   background-image: url("https://pub-static.fotor.com/assets/bg/835e8b4a-6aad-48b9-a105-cff386b3afc3.jpg");
-  h1 {
+ 
+}
+ h1 {
     font-family: "Trirong", serif;
     text-shadow: 2px 3px 2px #ababab;
     font-size: 44px;
@@ -46,4 +48,3 @@ html {
       padding: 15px;
       border-image: url(border.png) 30 stretch;
   }
-}
