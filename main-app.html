@@ -3,59 +3,60 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
-		<title>ChronoLogical</title>
+
+		<title>replit</title>
+
 		
-		<link href="appstyle.css" rel="stylesheet" type="text/css"/>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
 	</head>
+
+	<h1 class="text">ChronoLogical</h1>
 	
 	<body>
-		<div id="container">
+		<div id="content-div">
 			<table id="schedule">
 
-				<thead>
+					<thead>
 
-					<tr class="setup">
-						<th>Time</th>
-						<th>Event</th>
-					</tr>
+						<tr class="setup">
+							<th>Time</th>
+							<th>Event</th>
+						</tr>
 
-					<tr class="setup">
+						<tr class="setup">
 
-						<th>
-							<label>Time:</label>
-							<input type="time" id="time" size="10">
+							<th>
+								<label>Time:</label>
+								<input type="time" id="time" size="10">
 
-						</th>
+							</th>
 
-						<th>
-							<label>Event details:</label>
-							<input type="text" id="details" placeholder="ex: Take out the trash">
-						</th>
+							<th>
+								<label>Event details:</label>
+								<input type="text" id="details" placeholder="ex: Take out the trash">
+							</th>
 
-					</tr>
+						</tr>
 
-				</thead>
+					</thead>
 
 
-			</table>
-		</div>
-	    
-
-		<div id="reg-buttons">
-
-			<button id="add">Add</button>
-			<button id="rmv-all">Clear</button>
-			<button id="export">Export</button>
-			
+				</table>
 		</div>
 
-		<div id="import-functions">
+		<div id="buttons-div">
+			<button id="add" class="top">Add</button>
+			<button id="rmv-all" class="top">Clear</button>
+			<button id="export" class="top">Export</button>
+			<p class="text">Import a schedule:</p>
 			<button id="submit">Submit chosen file</button>
 			<input id="import" type="file" accept=".txt">
-			
 		</div>
+			
 		
-		<script src="appscript.js"></script>
+		<script src="script.js"></script>
 	</body>
 
 </html>
+
+
