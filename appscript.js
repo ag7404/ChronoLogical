@@ -27,13 +27,25 @@ function addEvent() {
 		alert("Your time and/or details are invalid.");
 		return;
 	}
+
+	let isDuplicate = false;
 	
 	for(var i = 0; i < events.length; i++) {
+
+		if(events[i].time === userMilTime && events[i].details === userDetails) {
+			isDuplicate = true;
+		}
+		
 		if(events[i].time > userMilTime) {
 			break;
 		}
 	}
 
+	if(isDuplicate) {
+		alert("Event already exists.");
+		return;
+	}
+	
 	let newEvent = new Event(userMilTime, userDetails);
 	events.push(newEvent);
 
