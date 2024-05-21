@@ -29,13 +29,13 @@ function addEvent() {
 	}
 
 	let isDuplicate = false;
-	
+
 	for(var i = 0; i < events.length; i++) {
 
 		if(events[i].time === userMilTime && events[i].details === userDetails) {
 			isDuplicate = true;
 		}
-		
+
 		if(events[i].time > userMilTime) {
 			break;
 		}
@@ -45,13 +45,12 @@ function addEvent() {
 		alert("Event already exists.");
 		return;
 	}
-	
+
 	let newEvent = new Event(userMilTime, userDetails);
 	events.push(newEvent);
 
 	addRow(newEvent, i+1);
 
-	console.log(JSON.stringify(events));
 }
 
 function addRow(eventObj, ind) {
@@ -64,28 +63,31 @@ function addRow(eventObj, ind) {
 
 	let detailsCell = newRow.insertCell(1);
 	detailsCell.textContent = eventObj.details;
-	
+
 }
 
 function removeEvent(event) {
 	const sure = confirm("Are you sure you would like to delete this event?");
 
 	if(sure) {
-		let time = toMilitary(event.target.parentNode.children[0].textContent);
-		let details = event.target.parentNode.children[1].textContent;
+		const parent = table.children[0];
+		const child = event.target.parentElement;
+
+		const time = toMilitary(child.children[0].textContent);
+		const details = child.children[1].textContent;
 
 		for(var i = 0; i < events.length; i++) {
-			const thisEvent = events[i];
-
-			if(thisEvent.time === time && thisEvent.details === details) {
+			if(events[i].time === time && events[i].details == details) {
 				break;
 			}
 		}
 
 		events.splice(i, 1);
-		table.deleteRow(i+1);
+		
+		parent.removeChild(child);
+		
 	}
-	
+
 }
 
 function exportData() {
@@ -97,7 +99,7 @@ function exportData() {
 	link.style.display = "none";
 	link.href = URL.createObjectURL(blob);
 	link.download = "schedule_raw.txt";
-	
+
 	document.body.appendChild(link);
 	link.click();
 	document.body.removeChild(link);
@@ -115,7 +117,7 @@ function processFileData(data) {
 
 function importData() {
 	const file = filesInput.files[0];
-	
+
 	if(file !== undefined) {
 
 		let reader = new FileReader();
@@ -132,14 +134,14 @@ function importData() {
 				alert("The data in your file was not valid.");
 				wipeData();
 			}
-			
+
 		}
-		
+
 	} else {
 		alert("You did not upload a file.");
 	}
-	
-	
+
+
 }
 
 function safeWipeData() {
@@ -170,7 +172,7 @@ function wipeData() {
 
 function toStandard(time) {
 	time = time.split(':');
-	
+
 	let hours = Number(time[0]);
 	let minutes = Number(time[1]);
 
@@ -179,9 +181,9 @@ function toStandard(time) {
 	if (hours > 0 && hours <= 12) {
 		milTime = "" + hours;
 	} else if (hours > 12) {
-	  	milTime = "" + (hours - 12);
+		milTime = "" + (hours - 12);
 	} else if (hours == 0) {
-	  	milTime = "12";
+		milTime = "12";
 	}
 
 	milTime += (minutes < 10) ? ":0" + minutes : ":" + minutes;
