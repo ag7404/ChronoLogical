@@ -26,22 +26,28 @@ html {
     padding: 20px;
     font-size: 25;
   }
-  button {
-      box-align: center;
-      background-color: #F9F2EB;
-      border: 1px dashed #D2B49C;
-      border-radius: 7px;
-      padding: 15px 10px;
-      text-align: center;
-      font-size: 11px;
-      transition-duration: 0.4s;
-      float: left;
-  }
 
-  button:hover {
-      background-color: #D2B49C;
+.fake_link {
+          text-decoration: none;
+          padding: 15px 10px;
+          margin-top: 5px;
+          border: 2px solid #D2B49C;
+          transition-duration: 0.4s;
+          background-color: #F9F2EB;
+          float: left;
+          border-radius: 7px;
+      }
+      
+     
+     .fake_link:link, .fake_link:visited {
+         color: black;
+     }
+     
+     .fake_link:hover {
+         background-color: #D2B49C;
       box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.24), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
-  }
+      color:white;
+     }
 
   #borderimg {
       border: 10px solid transparent;
