@@ -27,7 +27,7 @@ html {
     font-size: 25;
   }
 
-.fake_link {
+.fake-button {
           text-decoration: none;
           padding: 15px 10px;
           margin-top: 5px;
@@ -39,11 +39,11 @@ html {
       }
       
      
-     .fake_link:link, .fake_link:visited {
+     .fake-button:link, .fake-button:visited {
          color: black;
      }
      
-     .fake_link:hover {
+     .fake-button:hover {
          background-color: #D2B49C;
       box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.24), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
       color:white;
