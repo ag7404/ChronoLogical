@@ -4,6 +4,9 @@ html {
   background-image: url("https://w.wallhaven.cc/full/9d/wallhaven-9dyzgd.jpg");
   background-size: cover;
 }
+body {
+  color: white;
+}
 h1 {
   font-family: "Trirong", serif;
   text-shadow: 2px 3px 2px #ababab;
