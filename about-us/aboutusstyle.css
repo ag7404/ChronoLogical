@@ -15,6 +15,7 @@ h1 {
   padding: 17px;
   border-top-style: solid;
   border-bottom-style: solid;
+  color: white;
 }
 h2 {
   font-family: "Trirong", serif;
@@ -23,12 +24,12 @@ h2 {
   text-align: center;
   padding: 17px;
 }
-p1 {
+p {
   font-family: "Sofia", sans-serif;
   text-align: center;
   padding: 20px;
   font-size: 25;
-  color: #89CFF0;
+  color: white;
 }
 button {
     box-align: center;
