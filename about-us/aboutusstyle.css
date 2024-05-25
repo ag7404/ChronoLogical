@@ -29,22 +29,28 @@ p {
   font-size: 25;
   color: white;
 }
-button {
-    box-align: center;
-    background-color: #F9F2EB;
-    border: 1px dashed #D2B49C;
-    border-radius: 7px;
-    padding: 15px 10px;
-    text-align: center;
-    font-size: 11px;
-    transition-duration: 0.4s;
-    float: left;
-}
+.fake-button {
+          text-decoration: none;
+          padding: 15px 10px;
+          margin-top: 5px;
+          border: 2px solid #015BA8;
+          transition-duration: 0.4s;
+          background-color: #1D91F3;
+          float: left;
+          border-radius: 7px;
+      }
+      
+     
+     .fake-button:link, .fake-button:visited {
+         color: black;
+     }
+     
+     .fake-button:hover {
+         background-color: #015BA8;
+      box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.24), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
+      color:white;
+     }
 
-button:hover {
-    background-color: #D2B49C;
-    box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.24), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
-}
 
 #borderimg {
     border: 10px solid transparent;
