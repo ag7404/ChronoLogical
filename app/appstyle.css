@@ -123,4 +123,6 @@ input[type=file]::file-selector-button:hover {
 	color: white;
 	background-color: #fd7b2b;
 }
-
+a{
+	font-family: "Calibri", Verdana, sans-serif;
+}
