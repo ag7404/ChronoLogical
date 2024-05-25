@@ -1,8 +1,13 @@
-body {
-  font-family: "Calibri", Verdana, sans-serif;
+html {
+  width: 100%;
+  height: 100%;
   background-image: url("https://w.wallhaven.cc/full/8x/wallhaven-8x92x2.jpg");
-  color:white;
+  background-size: cover;
+  
 }
 
-
+body {
+ color: white;
+  background-color: #669900;
+}
 
