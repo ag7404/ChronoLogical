@@ -96,6 +96,10 @@ button:hover {
 	color:white;
 }
 
+input[type=file] {
+color: white;
+}
+
 input[type=file]::file-selector-button {
 	border: 2px solid #71028F;
 	background-color: white;
@@ -127,3 +131,25 @@ input[type=file]::file-selector-button:hover {
 a{
 	font-family: "Calibri", Verdana, sans-serif;
 }
+.fake-button {
+          text-decoration: none;
+          padding: 15px 10px;
+          margin-top: 5px;
+          border: 2px solid  #592a9c;
+          transition-duration: 0.4s;
+          background-color:  #964adb;
+          float: left;
+          border-radius: 7px;
+	
+      }
+      
+     
+     .fake-button:link, .fake-button:visited {
+         color: black;
+     }
+     
+     .fake-button:hover {
+         background-color:  #592a9c;
+      box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.24), 0 10px 40px 0 rgba(0, 0, 0, 0.19);
+      color:white;
+     }
