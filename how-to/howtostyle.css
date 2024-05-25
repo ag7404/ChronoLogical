@@ -1,13 +1,12 @@
-html {
-  width: 100%;
+ html {
   height: 100%;
-  background-image: url("https://w.wallhaven.cc/full/8x/wallhaven-8x92x2.jpg");
-  background-size: cover;
-  
-}
+  width: 100%;
 
+}
 body {
- color: white;
+  color: white;
+    background-image: url("https://w.wallhaven.cc/full/d/wallhaven-dpjryg.jpg");
+  background-size: cover;
   background-color: #669900;
+  font-family: "Calibri", Verdana, sans-serif;
 }
-
